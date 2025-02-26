@@ -1,17 +1,142 @@
-/*----------------------------------------------------------------------------
-    Reset
-----------------------------------------------------------------------------*/
+/*--------------------------------------------------------------
+BASE
+--------------------------------------------------------------*/
+
 html {
     box-sizing: border-box;
     font-size: 62.5%;
 }
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
     box-sizing: inherit;
 }
 
-/*------------------------------------------------------------------------------
-   Base
-------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------
+ELEMENT
+--------------------------------------------------------------*/
+
+body{
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 700;
+    color: #eca136;
+    text-decoration: none;
+    background-color: rgb(9, 26, 33);   
+}
+
+a{
+    text-decoration: none;
+ }
+
+ .wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header{
+    width: 1000px;
+    background-color: rgba(15, 38, 49, 0.95);
+    position: fixed;
+    top: 0;
+    left: calc(50% - 500px);
+    width: 1000px;
+    z-index: 1000;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+  }
+
+  ul{
+    padding: 0;
+  }
+  
+  .contenu{
+    max-width: 925px;
+    margin: 100px auto 0;
+  }
+
+  img{
+    max-width: 100%;
+  }
+
+ .contenu  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+    gap: 45px;
+  }
+  
+  .contenu ul li {
+    padding: 20px;
+    background-color: rgb(15, 38, 49);
+    border-radius: 10px;
+  }
+
+  .bouton {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 0 0 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  span:hover {
+    cursor: pointer;
+  }
+
+  li{
+    position: relative;
+  }
+
+  footer .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    background-color: rgba(15, 38, 49, 0.95);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+footer .wrapper p {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+.media {
+    background-color: rgb(15, 38, 49);
+    border-radius: 0 15px 15px 0;
+    position: fixed;
+    top: 200px;
+    left: 0;
+  }
+  
+  .media img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    position: relative;
+  }
+  
+  .media ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .media img:hover {
+    left: 3px;
+  }
+  
